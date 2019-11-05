@@ -1,0 +1,20 @@
+*.pyc
+__pycache_/
+.DS_Store
+.env
+ngrok
+.vscode
+
+*.egg-info
+
+build
+generated
+dist
+
+.tox
+.coverage
+
+# Google Oauth Credentials
+credentials.json
+calendar.dat
+client_secrets.json
