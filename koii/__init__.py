@@ -13,10 +13,10 @@ class Koii(object):
             self.init_app(app, **kwargs)
 
     def init_app(self, app, **kwargs):
-        routes = self._normalize_rotues(app.url_map)
+        routes = self._normalize_routes(app.url_map)
         self._print_routes(routes)
 
-    def _normalize_rotues(self, url_map):
+    def _normalize_routes(self, url_map):
         main_routes = []
         for rule in url_map._rules:
             routes = self._generate_routes(rule)
