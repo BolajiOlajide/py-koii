@@ -1,3 +1,2 @@
 colorama==0.4.1
-Flask==1.1.1
 tabulate==0.8.5

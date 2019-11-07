@@ -5,7 +5,7 @@ https://packaging.python.org/en/latest/distributing.html
 https://github.com/pypa/sampleproject
 """
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 from codecs import open
 from os import path
@@ -35,7 +35,7 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
     ],
-    packages=find_packages(exclude=["contrib", "docs", "tests"]),
-    install_requires=["requests"],
-    extras_require={"test": ["coverage"]},
+    packages=['koii'],
+    include_package_data=True,
+    install_requires=["colorama", "tabulate"]
 )
