@@ -11,7 +11,7 @@ def home():
     return jsonify({"status": "success"})
 
 
-@app.route("/proton", methods=['GET', 'PATCH'])
+@app.route("/proton", methods=["GET", "PATCH"])
 def proton():
     return jsonify({"status": "success", "route": "proton"})
 
