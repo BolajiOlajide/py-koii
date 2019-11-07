@@ -1,7 +1,5 @@
 # KOII
 
-[![star this repo](http://githubbadges.com/star.svg?user=BolajiOlajide&repo=koii&style=flat)](https://github.com/BolajiOlajide/koii-py)
-[![fork this repo](http://githubbadges.com/fork.svg?user=BolajiOlajide&repo=koii&style=flat)](https://github.com/BolajiOlajide/koii-py/fork)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
@@ -33,6 +31,6 @@ Koii(app)  # alternatively Koii.init_app(app)
 
 An example file can be [found here](https://github.com/BolajiOlajide/koii-py/blob/master/example.py).
 
-![Koii is inspired by Jackie and the fish](images/screenshot.jpg)
+![Koii is inspired by Jackie and the fish](images/screenshot.png)
 
 [![Support me via Patreon](https://github.com/BolajiOlajide/folly/blob/master/static/patreon.png)](https://www.patreon.com/bePatron?u=14962348)
