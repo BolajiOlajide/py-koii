@@ -19,7 +19,7 @@ pipenv install koii
 
 ### Usage
 
-To make use of Koii, ensure you initialize the middleware by passing the instance of your flaks app into the class or the `init_app` method. Ensure the class is initialized after your routes have been defined.
+To make use of Koii, ensure you initialize the middleware by passing the instance of your flaks app into the class or the `init_app` method. Ensure the class is initialized after your routes have been defined. If you're making use of blueprints, the same also applies, place the initialisation of the class after your blue print registration.
 
 ```py
 from koii import Koii
