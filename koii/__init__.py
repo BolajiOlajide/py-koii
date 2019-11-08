@@ -25,25 +25,29 @@ class Koii(object):
             self.init_app(app, **kwargs)
 
     def init_app(self, app, **kwargs):
-        routes = self._normalize_routes(app.url_map)
-        self._print_routes(routes)
+        routes = Koii._normalize_routes(app.url_map)
+        styled_routes = Koii._style_routes(routes)
+        print(styled_routes)
+        print(Style.RESET_ALL)
 
-    def _normalize_routes(self, url_map):
+    @staticmethod
+    def _normalize_routes(url_map):
         main_routes = []
         for rule in url_map._rules:
-            routes = self._generate_routes(rule)
+            routes = Koii._generate_routes(rule)
             main_routes.extend(routes)
         return main_routes
 
-    def _generate_routes(self, route):
+    @staticmethod
+    def _generate_routes(route):
         return [
             [(Fore.GREEN + method), (Fore.WHITE + route.rule)]
             for method in route.methods
-            if method in self.valid_verbs
+            if method in Koii.valid_verbs
         ]
 
-    def _print_routes(self, routes):
+    @staticmethod
+    def _style_routes(routes):
         headers = [(Fore.CYAN + "METHOD"), (Fore.CYAN + "PATH")]
         routes = "\n" + tabulate(routes, headers=headers) + "\n"
-        print(routes)
-        print(Style.RESET_ALL)
+        return routes

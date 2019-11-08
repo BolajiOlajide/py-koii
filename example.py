@@ -3,18 +3,21 @@ from flask import Flask, jsonify
 from koii import Koii
 
 
-app = Flask(__name__)
+def create_app():
+    app = Flask(__name__)
+
+    @app.route("/")
+    def home():
+        return jsonify({"status": "success"})
+
+    @app.route("/proton", methods=["GET", "PATCH"])
+    def proton():
+        return jsonify({"status": "success", "route": "proton"})
+
+    return app
 
 
-@app.route("/")
-def home():
-    return jsonify({"status": "success"})
-
-
-@app.route("/proton", methods=["GET", "PATCH"])
-def proton():
-    return jsonify({"status": "success", "route": "proton"})
-
+app = create_app()
 
 Koii(app)
 
