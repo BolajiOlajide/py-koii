@@ -5,6 +5,8 @@
 
 Python module for displaying routes in a flask application. This is a python variant for [Koii](https://github.com/BolajiOlajide/koii). It's a simple to use flask middleware that simply prints all the routes in a Flask application on the console.
 
+[![Build Status](https://travis-ci.org/BolajiOlajide/py-koii.svg?branch=master)](https://travis-ci.org/BolajiOlajide/py-koii)
+
 ## Installation
 
 Koii is easy to install - it currently can be installed using the `pip` or `pipenv` command.
