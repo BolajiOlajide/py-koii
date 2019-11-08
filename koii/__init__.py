@@ -1,8 +1,20 @@
+"""Koii
+
+Import the `Koii` class into your flask app and initialize:
+    ```
+    Koii(app)
+    ```
+
+See https://github.com/BolajiOlajide/koii-py/ for more information
+"""
 from colorama import init, Fore, Style
 from tabulate import tabulate
 
 
 init(autoreset=True)
+
+__version__ = "1.0.0"
+__author_name__ = "Bolaji Olajide"
 
 
 class Koii(object):
