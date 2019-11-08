@@ -1,2 +1,6 @@
 colorama==0.4.1
+Flask==1.1.1
+pytest==5.2.2
 tabulate==0.8.5
+tox==3.14.0
+twine==2.0.0
